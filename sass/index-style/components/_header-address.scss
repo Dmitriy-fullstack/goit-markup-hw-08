@@ -1,96 +1,89 @@
-.address-list {
-    @media screen and (min-width: 1200px) {    
-    display: flex;
-    margin-left: auto;
-    }
-    .item:not(:last-child) {
-        margin-right: 30px;
-        }    
+// .address-list {
+//     @media screen and (min-width: 1200px) {    
+//     display: flex;
+//     margin-left: auto;
+//     }
+//     .item:not(:last-child) {
+//         margin-right: 30px;
+//         }    
        
         
-    }
+//     }
 
-    .contacts {
-        display: inline-flex;
-        align-items: center;
-        color: $title-text-color;
-        font-style: normal;
-        font-weight: 500;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     .contacts {
+//         display: inline-flex;
+//         align-items: center;
+//         color: $title-text-color;
+//         font-style: normal;
+//         font-weight: 500;
+//         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-        &:hover, &:focus {
-        color: $accent-color;
-        fill: $accent-color;
-        }
-        &:hover svg, &:focus svg {
-            fill: $accent-color;
-        }
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
-    }
+//         &:hover, &:focus {
+//         color: $accent-color;
+//         fill: $accent-color;
+//         }
+//         &:hover svg, &:focus svg {
+//             fill: $accent-color;
+//         }
+//         @media screen and (max-width: 767px) {
+//             display: none;
+//         }
+//     }
 
      
-    .mail-icon {
-        width: 16px;
-        height: 15px;
-        margin-right: 10px;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    @media screen and (max-width: 767px) {
-        .menu-button {
-            display: inline-flex;
-            width: 40px;
-            height: 40px;
-            margin: 0;
-            border: none;
-            background-color: transparent;
+//     .mail-icon {
+//         width: 16px;
+//         height: 15px;
+//         margin-right: 10px;
+//         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+//     @media screen and (max-width: 767px) {
+//         .menu-button {
+//             display: inline-flex;
+//             width: 40px;
+//             height: 40px;
+//             margin: 0;
+//             border: none;
+//             background-color: transparent;
             
-        }
-    }
-    @media screen and (min-width: 768px) {
-        .menu-button {
-            display: none;
-        }
-    }
+//         }
+//     }
+//     @media screen and (min-width: 768px) {
+//         .menu-button {
+//             display: none;
+//         }
+//     }
 
-    .menu-button .icon-cross {
-        display: none;
-    }
-    .menu-button.is-open .icon-cross {
-        display: block;
-    }
-    .menu-button.is-open .icon-menu {
-        display: none;
-    }
-    .menu-container {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 453px;
-        background-color: $white-color;
-        margin: 0;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+//     .menu-button .icon-cross {
+//         display: none;
+//     }
+//     .menu-button.is-open .icon-cross {
+//         display: block;
+//     }
+//     .menu-button.is-open .icon-menu {
+//         display: none;
+//     }
+//     .menu-container {
+//         display: none;
+//         position: absolute;
+//         top: 100%;
+//         left: 0;
+//         width: 100%;
+//         height: 453px;
+//         background-color: $white-color;
+//         margin: 0;
+//         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
 
-        &.is-open {
-            display: block;
-        }
+//         &.is-open {
+//             display: block;
+//         }
 
-        @media screen and (min-width: 480px) {
-            display: none;
-            }
+//         @media screen and (min-width: 480px) {
+//             display: none;
+//             }
         
-    }
-    .icon-menu:hover,
-    .icon-menu:focus {
-        fill: $accent-color;
-    }
-    .icon-cross:hover,
-    .icon-cross:focus {
-        fill: $accent-color;
-    }
+//     }
+//     
 
     
 
