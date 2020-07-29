@@ -5,8 +5,8 @@
     }
     .item:not(:last-child) {
         margin-right: 30px;
-        }      
-          
+        }    
+       
         
     }
 
@@ -40,8 +40,9 @@
     @media screen and (max-width: 767px) {
         .menu-button {
             display: inline-flex;
+            width: 40px;
+            height: 40px;
             margin: 0;
-            padding: 0;
             border: none;
             background-color: transparent;
             
@@ -81,6 +82,14 @@
             display: none;
             }
         
+    }
+    .icon-menu:hover,
+    .icon-menu:focus {
+        fill: $accent-color;
+    }
+    .icon-cross:hover,
+    .icon-cross:focus {
+        fill: $accent-color;
     }
 
     
