@@ -268,7 +268,6 @@ summary {
 .content {
   padding-left: 15px;
   padding-right: 15px;
-  background-color: turquoise;
   margin-right: auto;
   margin-left: auto;
 }
@@ -603,10 +602,6 @@ summary {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.killer-margin {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .advantages {
     display: -webkit-box;
@@ -656,6 +651,16 @@ summary {
   color: #757575;
   text-align: left;
   width: 270px;
+}
+
+.section-margin {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-margin {
+    margin-top: 94px;
+  }
 }
 
 .page-header {
