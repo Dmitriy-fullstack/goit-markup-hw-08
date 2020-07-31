@@ -1,30 +1,14 @@
 .hero-bgc {
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)
     ), url(../img/hw4/hero.jpg); 
-    
-    @media screen and (min-width: $mobile) {
-        max-width: $mobile;
-        max-height: 400px;
-    }
-    @media screen and (min-width: $tablet) {
-        max-width: $tablet;
-        max-height: 400px;
-    }
-    @media screen and (min-width: $desktop) {
-        max-width: $tablet;
-        max-height: 600px;
-    }
-    
-    
-
+   
+      
+}   
 
     .hero {
-        // width: 600px;
         padding: 200px 0px; 
         margin-bottom: 60px;
         
@@ -70,7 +54,7 @@
         }
     }
 
-}
+
 
 // styling modal window
 
