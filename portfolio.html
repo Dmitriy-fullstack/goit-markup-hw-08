@@ -11,34 +11,53 @@
 <body class="page">
 
     <h1 class="killer-margin dn">portfolio</h1> <!--сделать невидимым, заголовок страницы-->
-    <header class=" border content">
-        <nav class="main-nav">
-            <a class="logo" href="index.html">
-                <p><span class="logo-color">Web</span> Studio</p>
-            </a>
-
-            <ul class="site-nav list">
-                <li class="item"> <a class="link" href="./index.html">Студия</a> </li>
-                <li class="item active"> <a class="link" href="./portfolio.html">Портфолио</a> </li>
-                <li class="item"> <a class="link" href="">Контакты</a> </li>
-            </ul>
-            <address class="address-list">
-                <ul class="list address-list">
-                    <li class="item">
-                        <a class="contacts link" href="mailto:info@devstudio.com">
-                            <svg class="mail-icon"><use href="./img/symbol-defs2.svg#icon-mail"></use></svg>
-                            info@devstudio.com</a>
-                    </li>
-                    <li class="item">
-                        <a class="contacts link" href="tel:+380961111111">
-                            <svg class="mail-icon"><use href="./img/symbol-defs2.svg#icon-phone"></use></svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
-        
-        </nav>  
-    </header>
+    <div class="page-header">
+        <header class="content">
+            <nav class="main-nav">
+                <a class="logo" href="index.html">
+                <p class="header-logo-margin"><span class="logo-color">Web</span> Studio</p>
+                </a>
+    
+                <button type="button"
+                class="menu-button" 
+                aria-controls="menu-container" 
+                aria-expanded="false" data-menu-button>
+                    <svg width= 40px height= 40px aria-label="переключатель мобильного меню">
+                        <use class="icon-menu" href="./img/symbol-defs-3.svg#icon-menu"></use>
+                        <use class="icon-cross" href="./img/symbol-defs-3.svg#icon-close_40px"></use>                  
+                    </svg>
+                </button>
+    
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="site-nav list">
+                        <li class="nav-item"> <a class="nav-link active" href="./index.html">Студия</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./portfolio.html">Портфолио</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="">Контакты</a> </li>
+                    </ul>
+                
+                    
+                    <address class="address-list">
+                        
+                        <ul class="list address-list">
+                            <li class="item">
+                                <a class="contacts link" href="mailto:info@devstudio.com">
+                                    <svg class="mail-icon"><use href="./img/symbol-defs2.svg#icon-mail"></use></svg>
+                                    info@devstudio.com</a>
+                            </li>
+                            <li class="item">
+                                <a class="contacts link" href="tel:+380961111111">
+                                    <svg class="mail-icon"><use href="./img/symbol-defs2.svg#icon-phone"></use></svg>
+                                    +38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    
+                    </address>
+                </div>
+         
+            
+            </nav>  
+        </header>
+    </div>
 
     <main>
         <!--блок ссылок 1-->
@@ -69,12 +88,12 @@
         </section>
 
         <section class="content projects">
-            <h2 class="killer-margin">блок ссылок 2</h2>
+            <h2 class="dn">блок ссылок 2</h2>
             <ul class="list projects">
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                            <img src="./img/img_hw2/tehno.jpg" alt="Технокряк">
+                            <img class="projects-img" src="./img/img_hw2/tehno.jpg" alt="Технокряк">
                             <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p>
@@ -88,7 +107,7 @@
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                        <img src="./img/img_hw2/img.jpg" alt="Баскетбол">
+                        <img class="projects-img" src="./img/img_hw2/img.jpg" alt="Баскетбол">
                         <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p> </div>
@@ -100,7 +119,7 @@
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                            <img src="./img/img_hw2/img1.jpg" alt="Ресторан_Seafood">
+                            <img class="projects-img" src="./img/img_hw2/img1.jpg" alt="Ресторан_Seafood">
                             <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p> 
@@ -113,7 +132,7 @@
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                            <img src="./img/img_hw2/img2.jpg" alt="Наушники">
+                            <img class="projects-img" src="./img/img_hw2/img2.jpg" alt="Наушники">
                             <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p> 
@@ -126,7 +145,7 @@
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                            <img src="./img/img_hw2/img3.jpg" alt="Коробки">
+                            <img class="projects-img" src="./img/img_hw2/img3.jpg" alt="Коробки">
                             <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p> 
@@ -139,7 +158,7 @@
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                        <img src="./img/img_hw2/img4.jpg" alt="Монитор">
+                        <img class="projects-img" src="./img/img_hw2/img4.jpg" alt="Монитор">
                         <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p> 
@@ -152,7 +171,7 @@
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                            <img src="./img/img_hw2/img5.jpg" alt="Журнал">
+                            <img class="projects-img" src="./img/img_hw2/img5.jpg" alt="Журнал">
                             <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p> 
@@ -165,7 +184,7 @@
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                            <img src="./img/img_hw2/img6.jpg" alt="Лейба">
+                            <img class="projects-img" src="./img/img_hw2/img6.jpg" alt="Лейба">
                             <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p> 
@@ -177,7 +196,7 @@
                 <li class="card">
                     <a class="card-link link" href="">
                         <div class="projects-modal">
-                            <img src="./img/img_hw2/img7.jpg" alt="Ноутбук">
+                            <img class="projects-img" src="./img/img_hw2/img7.jpg" alt="Ноутбук">
                             <p class="card-text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового шпионажа и атак
                             на защищённые сервера конкурентов</p> 
@@ -242,5 +261,21 @@
         <div class="content dev_border"><p class="developed">2020 | Developed by GoIT Students </p></div>
       
     </footer>
+    <script>
+        (() => {
+            const menuBtnRef = document.querySelector("[data-menu-button]");
+            const mobileMenuRef = document.querySelector("[data-menu]");
+          
+            menuBtnRef.addEventListener("click", () => {
+              const expanded =
+                menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+          
+              menuBtnRef.classList.toggle("is-open");
+              menuBtnRef.setAttribute("aria-expanded", !expanded);
+          
+              mobileMenuRef.classList.toggle("is-open");
+            });
+          })();
+        </script>
 </body>
 </html>
