@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: $desktop) {
+@media screen and (max-width: $desktop - 1px) {
     .mobi-hidden {
         display: none;
     }
@@ -10,6 +10,7 @@
 
     @media screen and (min-width: $desktop) {
     display: flex;
+    justify-content: center;
     .work-title {
         position: absolute;
         bottom: 27px;
@@ -32,6 +33,7 @@
         }
         .work-img {
             position: relative;
+            max-width: 100%;
     
             &::before {
                 content: '';

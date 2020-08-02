@@ -688,7 +688,7 @@ summary {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .mobi-hidden {
     display: none;
   }
@@ -699,6 +699,9 @@ summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .work .work-title {
     position: absolute;
@@ -722,6 +725,7 @@ summary {
   }
   .work .work-img {
     position: relative;
+    max-width: 100%;
   }
   .work .work-img::before {
     content: '';
@@ -804,7 +808,9 @@ summary {
 }
 
 .team .team-img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -817,9 +823,6 @@ summary {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-left: -15px;
     margin-right: -15px;
   }
