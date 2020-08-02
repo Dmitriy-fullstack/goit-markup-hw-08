@@ -313,7 +313,7 @@ summary {
     width: 480px;
   }
   .hero .hero-bgc {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -1765,6 +1765,8 @@ summary {
     padding-top: 60px;
     padding-bottom: 60px;
     z-index: 10;
+    max-width: 583px;
+    width: 100%;
   }
   .menu-container.is-open {
     display: block;
