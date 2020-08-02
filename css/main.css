@@ -304,22 +304,12 @@ summary {
 
 @media screen and (min-width: 480px) {
   .hero-bgc {
-    max-width: 480px;
+    max-width: 1600px;
     width: 100%;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-bgc {
-    max-width: 768px;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-bgc {
-    max-width: 1200px;
-    width: 100%;
+  .hero-bgc .hero {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

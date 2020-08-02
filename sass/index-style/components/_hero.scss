@@ -7,17 +7,21 @@
     ), url(../img/hw4/hero.jpg); 
 
     @media screen and (min-width: $mobile) {
-        max-width: 480px;
+        max-width: 1600px;
         width: 100%;
+        .hero {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-    @media screen and (min-width: $tablet) {
-        max-width: 768px;
-        width: 100%;
-    }
-    @media screen and (min-width: $desktop) {
-        max-width: 1200px;
-        width: 100%;
-    }
+    // @media screen and (min-width: $tablet) {
+    //     max-width: 768px;
+    //     width: 100%;
+    // }
+    // @media screen and (min-width: $desktop) {
+    //     max-width: 1200px;
+    //     width: 100%;
+    // }
 
    
       
