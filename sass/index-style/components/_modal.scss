@@ -22,15 +22,15 @@
     
     @media screen and (min-width: $mobile){
        
-       position: relative; 
+       position: relative;
+       max-width: 528px;
     }
     @media screen and (min-width: $tablet){
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        min-width: 528px;
-        min-height: 581px;
+        max-width: 528px;
         padding: 40px;
         border-radius: 4px;
     }
