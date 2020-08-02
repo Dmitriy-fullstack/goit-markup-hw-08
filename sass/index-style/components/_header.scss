@@ -21,6 +21,7 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: $primary-text-color;
+    flex-grow: 1;
     
 
     @media screen and (min-width: $desktop) {
@@ -44,6 +45,7 @@
     border: none;
     outline: none;
     background-color: transparent;
+    // flex-grow: 1;
 
     @media screen and (min-width: $tablet){
         display: none;
@@ -60,7 +62,10 @@
 }
 // навигация для мобильной версии
 .menu-container{
-    @media screen and (max-width: $tablet - 1px){
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
+    @media screen and (min-width: $mobile) {
         display: none;
         position: absolute;
         top: 100%;
@@ -70,6 +75,7 @@
         padding-bottom: 60px;
         background-color: $white-color;
         margin: 0;
+        z-index: 10;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
 
         &.is-open {
@@ -107,17 +113,34 @@
         }   
     }
             @media screen and (min-width: $tablet) {
+                position: relative;
+                // display: block;
+                align-items: center;
+              
                 display: flex;
+                padding-top: 0;
+                padding-bottom: 0;
+                box-shadow: none;
+
+
+                }
+                
                 .site-nav {
                     display: flex;
-                    justify-content: center; 
+                    justify-content: space-between; 
                     align-items: center;
                     margin-right: 84px;
                 }
                 .nav-item {
                     margin-left: auto;
                     position: relative;
-                    
+                                        
+                }
+                .nav-item:not(:last-child) {
+                    margin-bottom: 0;
+                    }
+                .nav-item:last-child {
+                    margin-bottom: 0;
                 }
                 .nav-item:not(:last-child) {
                     margin-right: 50px;
@@ -142,39 +165,51 @@
                 
             }
             @media screen and (min-width: $desktop) {
-                .address-list {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
 
-                }
-                .main-nav {
+                .menu-container .address-list {
                     display: flex;
                     flex-direction: row;
+                    margin-left: auto;
                     align-items: center;
-                    justify-content: space-between;
-                }
+                    justify-content: center;
+                    
+                    .item:not(:last-child) {
+                        margin-right: 30px;
+                        } 
+
+                    .address-list {
+                    text-align: center;
+                    .item:not(:last-child){
+                        margin-bottom: 0;
+                    }
+                }  
+                
+                
                 .contacts {
                     font-size: 14px;
                     line-height: 16px;
                 }
+                .menu-container{
+                    flex-grow: 2;
+                    
+                }              
+                .main-nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-right: 81px;
+                }
+                .menu-container {
+                    margin-left: 85px;
+                    // flex-grow: 1;
                 
-}
-
-@media screen and (min-width: $desktop) {
-    .main-nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 81px;
-    }
-    .menu-container {
-        margin-left: 85px;
-        flex-grow: 1;
-       
-    }
-}
+                }
+        }
+        .site-nav {
+            margin-left: 85px;
+            margin-right: 0;
+        }              
+        
             
 
 
@@ -285,4 +320,4 @@
     }
 
             
-}
+            }
