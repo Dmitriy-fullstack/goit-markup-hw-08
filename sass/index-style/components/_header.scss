@@ -21,7 +21,7 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: $primary-text-color;
-    flex-grow: 2;
+    flex-grow: 1;
     
 
     @media screen and (min-width: $desktop) {
@@ -65,7 +65,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    // width: 100%;
     background-color: $white-color;
     margin: 0;
     @media screen and (max-width: $tablet - 1px)  {
@@ -173,16 +173,16 @@
                     display: flex;
                     flex-direction: row;
                     margin-left: auto;
+                    margin-right: auto;
                     align-items: center;
+                    text-align: center;
                     
                     
                     .item:not(:last-child) {
                         margin-right: 30px;
                         } 
 
-                    .address-list {
-                    text-align: center;
-
+                    
                     .item:not(:last-child){
                         margin-bottom: 0;
                         }
@@ -193,10 +193,7 @@
                     line-height: 16px;
                 }
                              
-                .main-nav {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
+                .main-nav {                                       
                     margin-right: 81px;
                 }
                 .menu-container {
@@ -206,13 +203,13 @@
                 }
                 .site-nav {
                     margin-left: 85px;
-                    margin-right: 305px;
+                    
                 }              
                 
                 
         }
         
-    }
+    
             
 
 
@@ -223,27 +220,7 @@
     font-family: $main-font-family;
     text-align: center;
     
-    // @media screen and (min-width: $desktop) {
-    //     display: flex;
-    //     justify-content: center;
-    // }  
-
-//         .item:not(:last-child) {
-//             margin-bottom: 40px;
-//         }
-//     }
-
-//     @media screen and (min-width: $tablet) {
-//     margin-left: 85px;
-
-
-    // .item {
-    //     margin-left: auto;
-        
-    // }
-
-//     .item:not(:last-child) {
-//         margin-right: 50px;
+    
 
 
     .active::after {
@@ -259,9 +236,7 @@
     }    
 }
 
-//     // .item:not(:last-child) {
-//     //     margin-right: 50px;
-//     // }
+
 
     .nav-link {
         display: inline-block;
@@ -279,25 +254,6 @@
     }
 }
 
-   
-// @media screen and (min-width: $mobile) {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-// }
-
-// }
-
-// .address-list {
-//     @media screen and (min-width: 1200px) {    
-//     display: flex;
-//     margin-left: auto;
-//     }
-//     .item:not(:last-child) {
-//         margin-right: 30px;
-//         }         
-        
-//     }
     .contacts {
         // display: inline-flex;
         color: $title-text-color;
@@ -323,4 +279,4 @@
     }
 
             
-            
+          
