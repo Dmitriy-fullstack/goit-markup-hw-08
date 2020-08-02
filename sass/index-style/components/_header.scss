@@ -21,7 +21,7 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: $primary-text-color;
-    flex-grow: 1;
+    
     
 
     @media screen and (min-width: $desktop) {
@@ -45,7 +45,7 @@
     border: none;
     outline: none;
     background-color: transparent;
-    // flex-grow: 1;
+    
 
     @media screen and (min-width: $tablet){
         display: none;
@@ -117,22 +117,19 @@
     }
             @media screen and (min-width: $tablet) {
                 position: relative;
-                // display: block;
-                              
+                                              
                 display: flex;
                 align-items: center;
                 padding-top: 0;
                 padding-bottom: 0;
                 box-shadow: none;
-
-
-                
+              
                 
                 .site-nav {
                     display: flex;
                     justify-content: space-between; 
                     align-items: center;
-                    margin-right: 84px;
+                    // margin-right: 84px;
                 }
                 .nav-item {
                     margin-left: auto;
@@ -198,13 +195,13 @@
                 }
                 .menu-container {
                     // margin-left: 85px;
-                    flex-grow: 2;
+                    flex-grow: 1;
                     justify-content: space-between;
                 }
-                .site-nav {
-                    margin-left: 85px;
+                // .site-nav {
+                //     margin-left: 85px;
                     
-                }              
+                // }              
                 
                 
         }
