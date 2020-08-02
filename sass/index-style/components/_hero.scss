@@ -1,14 +1,23 @@
 .hero-bgc {
-    // max-width: 100%;
-    // margin-left: auto;
-    // margin-right: auto;
+    
     text-align: center;
     background-repeat: no-repeat;
-    // background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)
     ), url(../img/hw4/hero.jpg); 
 
+    @media screen and (min-width: $mobile) {
+        max-width: 480px;
+        width: 100%;
+    }
+    @media screen and (min-width: $tablet) {
+        max-width: 768px;
+        width: 100%;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: 1200px;
+        width: 100%;
+    }
 
    
       
@@ -21,26 +30,20 @@
         @media screen and (min-width: $mobile) {
             padding: 118px 0px;
             width: 480px;
-            .hero-bgc {
-                max-width: 480px;
-            }
+            
         }
 
         
         @media screen and (min-width: $tablet) {
             padding: 118px 0px;
             width: 768px;
-            .hero-bgc {
-                width: 768px;
-            }
+            
         }
 
         @media screen and (min-width: $desktop) {
             padding: 200px 0px;
             width: 1200px;
-            .hero-bgc {
-                width: 1200px;
-            }
+            
         }
 
     
